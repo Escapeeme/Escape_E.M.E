@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape E.M.E</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo de votre site" id="logo">
+        </a>
+    </header>
+
+    <h1>Bienvenue sur Escape E.M.E !</h1>
+
+    <nav>
+        <a href="page2.html" id="boutonplus" class="button">En savoir plus</a>
+        <a href="index.html" id="boutonHome" class="button">Home</a>
+    </nav>
+
+    <main>
+        <input type="text" id="champSaisie" placeholder="Saisissez un mot">
+        <button onclick="afficherResultat()" class="button" id="boutonson">Afficher le Résultat</button>
+        <audio id="sons">
+            <source id="bruit" src="" type="audio/mpeg">
+        </audio>
+        
+        <div id="resultat"></div>
+
+        <div class="aider">
+            <div id="exp">Date sous forme :</div>
+            <div id="aide1" class="aide">Date : jj/mm/aaaa</div>
+            <div id="aide2" class="aide">Entre deux dates : aaaa/aaaa</div>
+            <a href="page3.html" id="boutonIndice" class="button">Indice</a>
+        </div>
+    </main>
+
+    <script>
+        const sounds = [
+            'sons/audio1.mp3',
+            'sons/audio2.mp3', 
+            'sons/audio3.mp3',
+        ];
+
+        const button = document.getElementById('boutonson');
+        const audioElement = document.getElementById('sons');
+        const soundSource = document.getElementById('bruit');
+
+        function playRandomSound() {
+            const randomIndex = Math.floor(Math.random() * sounds.length);
+            const selectedSound = sounds[randomIndex];
+            
+            soundSource.src = selectedSound;
+            audioElement.load();
+            audioElement.play().catch(error => {
+                console.error("Erreur de lecture audio:", error);
+            });
+        }
+
+        button.addEventListener('click', playRandomSound);
+    </script>
+    <script src="home.js"></script>
+</body>
+</html>

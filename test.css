@@ -1,0 +1,173 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh; /*change la hauteur de la page*/
+}
+
+
+/*images*/
+header {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#logo {
+    position: absolute;
+    bottom: 707px;
+    left: 687px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#image1 {
+    position: absolute;
+    top: 75px;
+    left: 250px;
+    width: 450px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: black;
+}
+#image2 {
+    position: absolute;
+    top: 430px;
+    right: 250px;
+    width: 450px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: black;
+}
+#image3 {
+    position: absolute;
+    top: 785px;
+    left: 250px;
+    width: 450px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: black;
+}
+
+
+/*texts*/
+/*Qui sommes nous ?*/
+#titre1 {
+    position: absolute;
+    bottom: 580px;
+    left: 750px;
+    color: #333;
+}
+#text1 {
+    position: absolute;
+    bottom: 520px;
+    left: 750px;
+    color: #555;
+    margin-bottom: 20px;
+}
+#autre1 {
+    position: absolute;
+    bottom: 490px;
+    left: 750px;
+    color: #555;
+    margin-bottom: 20px;
+}
+#second1 {
+    position: absolute;
+    bottom: 460px;
+    left: 750px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*Notre mission*/
+#titre2 {
+    position: absolute;
+    top: 410px;
+    left: 550px;
+    color: #333;
+}
+#text2 {
+    position: absolute;
+    top: 470px;
+    left: 420px;
+    color: #555;
+    margin-bottom: 20px;
+}
+#autre2 {
+    position: absolute;
+    top: 500px;
+    left: 420px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*Notre but*/
+#titre3 {
+    position: absolute;
+    bottom: -130px;
+    left: 750px;
+    color: #333;
+}
+#text3 {
+    position: absolute;
+    bottom: -190px;
+    left: 750px;
+    color: #555;
+    margin-bottom: 20px;
+}
+#autre3 {
+    position: absolute;
+    bottom: -220px;
+    left: 750px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/*Boutons*/
+#bouton_retour {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#bouton_retour:hover {
+    background-color: #006666;
+}
+
+
+
+/*TEST:
+/*trait noir
+.container {
+    position: relative;
+    height: 100%;
+  }
+  
+  .top-section, .bottom-section {
+    width: 100%;
+    height: 50%;
+    float: left;
+  }
+  
+  .divider {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    height: 2px; /* Hauteur du trait noir
+    background-color: black;
+  }
+*/

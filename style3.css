@@ -1,0 +1,191 @@
+body {
+    background-color: #23518a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    bottom: 550px;
+    left: 680px;
+    font-size: 50px;
+    color: black;
+    text-decoration: underline;
+}
+
+
+#bloc1{
+    position: absolute;
+    bottom: 320px;
+    left: center;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+#bloc2{
+    position: absolute;
+    bottom: 90px;
+    left: center;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.bloc a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.texte-indice {
+    margin-top: 10px;
+}
+
+#indice1, #indice2, #indice3, #indice4, #indice5, #indice6{
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+}
+#indice:hover{
+    background-color: rgb(0, 105, 0);
+}
+
+#salle{
+    text-decoration: underline;
+}
+
+#bouton_retour {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#bouton_retour:hover {
+    background-color: #006666;
+}
+
+header {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#logo {
+    position: absolute;
+    bottom: 350px;
+    left: 680px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    body {
+        display: block;
+        padding: 20px;
+    }
+
+    h1 {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    #logo {
+        position: static;
+        width: 100px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #bouton_retour {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #logo {
+        width: 60px;
+    }
+}
+
+
+.texte-indice {
+    position: absolute;
+    left: 700px;
+    color: antiquewhite;
+    font-size: 25px;
+    display: none;
+    width: 300px; /* Ajoutez une largeur fixe */
+}
+
+/* Media Queries pour les textes d'indices */
+@media screen and (max-width: 1024px) {
+    .texte-indice {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        width: 100%; /* Largeur totale sur écrans plus petits */
+        left: 0;
+        padding: 0 20px; /* Ajoutez un peu de padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .texte-indice {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .texte-indice {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .bloc a {
+        margin-bottom: 10px;
+    }
+
+    .texte-indice {
+        margin-top: 5px;
+    }
+}
