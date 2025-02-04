@@ -14,22 +14,22 @@ function afficherResultat() {
 
     // SALLE 6
     else if (motSaisi.toLowerCase() === 'martin luther') { //Dans la premiere boite - Fondateur de la Réforme protestante ? - Page 148
-        resultatContainer.textContent = 'électricité';
-    }else if (motSaisi === '1400/1600') { //tableau éléctrique - Dates de la Renaissances ? - Page 138
-        resultatContainer.textContent = 'étiquette';
+        resultatContainer.textContent = 'Alimentation réseau';
+    }else if (motSaisi === '1400/1600') { //Prise64 - Dates de la Renaissances ? - Page 138
+        resultatContainer.textContent = 'Etiquette';
     }else if (motSaisi === '1475') { //étiquette d'énergie élèctrique - naissance de Michel Ange ? - Page 132
-        resultatContainer.textContent = 'trousseau de clef';
+        resultatContainer.textContent = 'Office planer (tableau étiquette)';
     } 
 
         //Dates importantes
 
     //SALLE 5
     else if (motSaisi === '04/07/1776') { //dans la deuxieme boite - Déclaration de l'indépendance des Etats Unis ? - Page 210
-        resultatContainer.textContent = 'Testeur de tension';
-    }else if (motSaisi === '24/08/1572') { //multimetre - Massacre des chefs protestant lors de la Saint Barthelemy ? - Page 173
-        resultatContainer.textContent = 'numérique';
-    } else if (motSaisi === '21/11/1783') { //coupe - Date de la premiere ascension humaine en montgolfiere ? - Page 228
-        resultatContainer.textContent = 'Office planer (tableau étiquette)';
+        resultatContainer.textContent = 'Feu';
+    }else if (motSaisi === '24/08/1572') { //extincteur - Massacre des chefs protestant lors de la Saint Barthelemy ? - Page 173
+        resultatContainer.textContent = 'Electricité';
+    } else if (motSaisi === '21/11/1783') { //tableau électrique - Date de la premiere ascension humaine en montgolfiere ? - Page 228
+        resultatContainer.textContent = 'Trousseau de clef';
     }    
 
     // EASTER EGG
