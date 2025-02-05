@@ -26,12 +26,12 @@ function afficherResultat() {
     //SALLE 5
     else if (motSaisi === '04/07/1776') { //dans la deuxieme boite - Déclaration de l'indépendance des Etats Unis ? - Page 210
         resultatContainer.textContent = 'Feu';
-    }else if (motSaisi === '24/08/1572') { //extincteur - Massacre des chefs protestant lors de la Saint Barthelemy ? - Page 173
+    }else if (motSaisi === '24/08/1572') { //extincteur - Massacre des chefs protestant lors de la  Saint Barthelemy ? - Page 173
         resultatContainer.textContent = 'Electricité';
-    } else if (motSaisi === '21/11/1783') { //tableau électrique - Date de la premiere ascension humaine en montgolfiere ? - Page 228
+    } else if (motSaisi === '21/11/1783') { //tableau électrique - Date de la premiere ascension humaine en montgolfiere ? - Page 228  
         resultatContainer.textContent = 'Trousseau de clef';
     }    
-
+ 
     // EASTER EGG
     else if (motSaisi === 'tolaini') {
         resultatContainer.textContent = 'meilleur prof';
